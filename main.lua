@@ -540,6 +540,10 @@ local function minisaacUpdate(_, fam)
             pl.Velocity = fam.Velocity
 
             local weapType = data.DenisMinisaacData.WeaponType or (pl:GetWeapon(1) and pl:GetWeapon(1):GetWeaponType() or WeaponType.WEAPON_TEARS)
+            if(not VALID_WEAPONTYPES[weapType]) then
+                weapType = WeaponType.WEAPON_TEARS
+            end
+
             local forceFlags = data.DenisMinisaacData.GuaranteedFlags or TearFlags.TEAR_NORMAL
             local forceColor = data.DenisMinisaacData.TearColor or Color.Default
             local dmgMult = data.DenisMinisaacData.DamageMult or MINISAAC_DMG_MULT
