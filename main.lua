@@ -352,6 +352,8 @@ mod:AddCallback(ModCallbacks.MC_POST_PLAYER_UPDATE, denisUpdate, PlayerVariant.P
 local function renderDenisChargebar(_, pl, offset)
     if(pl:GetPlayerType()~=mod.PLAYER_DENIS) then return end
     if(Options.ChargeBars==false) then return end
+    local RMode = Game():GetRoom():GetRenderMode()
+    if(RMode~=RenderMode.RENDER_NORMAL and RMode~=RenderMode.RENDER_WATER_ABOVE) then return end
 
     local charge = pl:GetData().DenisCharge or 0
     local barOffset = Vector(-19,-30)+offset-Game():GetRoom():GetRenderScrollOffset()
@@ -764,7 +766,7 @@ mod:AddCallback(ModCallbacks.MC_POST_ENTITY_KILL, postMinisaacDeath, EntityType.
 local function useAmoeba(_, _, rng, pl, flags, slot, vardata)
     for _, ent in ipairs(Isaac.FindByType(5,100)) do
         local pickup = ent:ToPickup() ---@cast pickup EntityPickup
-        if(pickup and not pickup:IsShopItem()) then
+        if(pickup and pickup.SubType~=0 and not pickup:IsShopItem()) then
 
             local seed = rng:RandomInt(2^32-1)+1
             SAVED_SEEDS[tostring(seed)] = {
@@ -930,7 +932,7 @@ local function ocellusPlayerPetrify(_, pl)
         end
     end
 end
-mod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ocellusPlayerPetrify, PlayerVariant.PLAYER)
+mod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ocellusPlayerPetrify)
 
 --#endregion
 
@@ -1473,7 +1475,12 @@ local function roomTransitionUpdate(_)
         end
 
         local bossSp = roomT:GetVersusScreenSprite()
-        local playerLayerId = bossSp:GetLayer("PlayerPortrait"):GetLayerID()
+        local playerLayerId
+        if(REPENTANCE_PLUS) then
+            playerLayerId = bossSp:GetLayer("PlayerPortrait_1"):GetLayerID()
+        else
+            playerLayerId = bossSp:GetLayer("PlayerPortrait"):GetLayerID()
+        end
         local bFrame = bossSp:GetFrame()
 
         local animData = bossSp:GetCurrentAnimationData()
