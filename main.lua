@@ -330,6 +330,7 @@ local function denisUpdate(_, pl)
                 end
 
                 local newMinisaac = pl:AddMinisaac(pl.Position, false)
+                newMinisaac:GetSprite():Play("FlyDown", true)
                 newMinisaac:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
                 tryHoldMinisaac(pl, newMinisaac)
                 sfx:Play(SoundEffect.SOUND_BLOODSHOOT)
@@ -523,7 +524,7 @@ local function minisaacUpdate(_, fam)
             data.DenisMinisaacThrownTear = nil
 
             fam.EntityCollisionClass = EntityCollisionClass.ENTCOLL_ALL
-            fam.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_GROUND
+            fam.GridCollisionClass = (pl.CanFly and EntityGridCollisionClass.GRIDCOLL_WALLS or EntityGridCollisionClass.GRIDCOLL_GROUND)
         end
 
         return true
