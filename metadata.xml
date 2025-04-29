@@ -1,8 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-	<name>Denis (+11 unlocks) [RGON]</name>
-	<directory>denis</directory>
-	<description/>
-	<version>1.0</version>
-	<visibility/>
-</metadata>
+    <name>Denis (+11 unlocks) [RGON]</name>
+    <directory>denis</directory>
+    <id>3472778480</id>
+    <description>[b]This mod requires REPENTOGON, it will not function properly without it![/b]
 
+Say hello to [u]Denis[/u] (and his offspring)!
+
+[h2]Denis' Mechanics[/h2]
+
+Denis can't fire tears and must instead rely on his horde of Minisaacs to attack for him.
+- He can charge up to mitose a new Minisaac, and can have more Minisaacs the higher his firerate is.
+- His Minisaacs copy tear effects, and certain Minisaacs are guaranteed to fire some tear effects.
+- He can pick up and throw Minisaacs by pressing the [DROP] key near them.
+
+The mod contains 11 unlocks for Denis, and full compatibility with the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836319872]EID[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3404171769]Accurate Blurbs[/url] mods!
+
+[h2]Credits[/h2]
+spoop - Literally everything
+Special thanks to "eiffel 65", "Team Floorbirth 3", "Teams Vs Projects 2: It's About Time", "Project Team", "Team Chocolate 5", "Team Li Yuwen 3", "Trans Vs Politicians 2: It's About T", "Team AltVerz", "Inklings Vs Octarians 2: It's About Squids", "Trains Vs Polynesians 2: It's About Rails", "Team Project", "Chocolate Vs Milkshake 2: It's About MOD", 
+</description>
+    <version>1.2</version>
+    <visibility>Friends Only</visibility>
+    <tag id="Lua"/>
+    <tag id="Items"/>
+    <tag id="Active Items"/>
+    <tag id="Trinkets"/>
+    <tag id="Player Characters"/>
+</metadata>
