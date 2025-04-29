@@ -1,0 +1,48 @@
+<ItemPools>
+    <Pool Name="treasure">
+        <Item Name="Power Cell"/>
+        <Item Name="Mitochondria"/>
+    </Pool>
+    <Pool Name="greedTreasure">
+        <Item Name="Power Cell"/>
+        <Item Name="Mitochondria"/>
+    </Pool>
+
+    <Pool Name="shop">
+        <Item Name="Cello"/>
+        <Item Name="Cellphone"/>
+    </Pool>
+    <Pool Name="greedShop">
+        <Item Name="Cello"/>
+        <Item Name="Cellphone"/>
+    </Pool>
+
+    <Pool Name="angel">
+        <Item Name="Amoeba" Weight="0.5" DecreaseBy="0.5"/>
+    </Pool>
+    <Pool Name="greedAngel">
+        <Item Name="Amoeba" Weight="0.5" DecreaseBy="0.5"/>
+    </Pool>
+
+    <Pool Name="curse">
+        <Item Name="Ocellus"/>
+    </Pool>
+    <Pool Name="greedCurse">
+        <Item Name="Ocellus"/>
+    </Pool>
+
+    <Pool Name="redChest">
+        <Item Name="Ocellus"/>
+    </Pool>
+
+    <Pool Name="secret">
+        <Item Name="Amoeba"/>
+    </Pool>
+    <Pool Name="greedSecret">
+        <Item Name="Amoeba"/>
+    </Pool>
+
+    <Pool Name="craneGame">
+        <Item Name="Cellphone"/>
+    </Pool>
+</ItemPools>

@@ -1,0 +1,5 @@
+<entities anm2root="gfx/" version="5">
+    <entity id="3" variant="228" subtype="5745" anm2path="familiar/denis_minisaac.anm2" name="Minisaac (Amoeba)"
+        baseHP="15" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" 
+        numGridCollisionPoints="12" shadowSize="10" stageHP="0" tags="cansacrifice" />
+</entities>

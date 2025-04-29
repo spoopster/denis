@@ -1,0 +1,11 @@
+<players nameimageroot="gfx/ui/player_portraits/" portraitroot="gfx/ui/player_portraits/" root="gfx/characters/players/">
+
+	<player birthright="Lucky babies" name="Denis"
+		nameimage="denis_name.png" portrait="denis_portrait.png" extraportrait="denis_portrait.anm2" skin="character_denis.png"
+		costumeSuffix="denis" skinColor="2"
+
+        canShoot="false"
+
+		heartcontainers="6" redhearts="6"
+	/>
+</players>

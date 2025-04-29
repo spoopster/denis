@@ -1,0 +1,13 @@
+<achievements gfxroot="gfx/ui/achievements/">
+	<achievement name="Denis - Amoeba" text="" gfx="denis_amoeba.png" />
+	<achievement name="Denis - Mitochondria" text="" gfx="denis_mitochondria.png" />
+	<achievement name="Denis - Cello" text="" gfx="denis_cello.png" />
+	<achievement name="Denis - Cellphone" text="" gfx="denis_cellphone.png" />
+	<achievement name="Denis - Power Cell" text="" gfx="denis_power_cell.png" />
+	<achievement name="Denis - Ocellus" text="" gfx="denis_ocellus.png" />
+	<achievement name="Denis - Animal Cell" text="" gfx="denis_animal_cell.png" />
+	<achievement name="Denis - Plant Cell" text="" gfx="denis_plant_cell.png" />
+	<achievement name="Denis - Fungi Cell" text="" gfx="denis_fungi_cell.png" />
+	<achievement name="Denis - Protist Cell" text="" gfx="denis_protist_cell.png" />
+	<achievement name="Denis - Prokaryotic Cell" text="" gfx="denis_prokaryotic_cell.png" />
+</achievements>

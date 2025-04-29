@@ -1,0 +1,101 @@
+<items gfxroot="gfx/items/" version="1" deathanm2="gfx/death items.anm2" >
+
+<!-- ITEMS -->
+<passive id="0" name="Mitochondria"
+    description="I know this one!"
+    gfx="denis_mitochondria.png"
+    quality="3"
+    tags="offensive"
+    cache=""
+
+    achievement="Denis - Mitochondria"
+/>
+<active id="1" name="Amoeba"
+    description="Assimilate"
+    gfx="denis_amoeba.png"
+    quality="4"
+    tags="offensive"
+    cache=""
+
+    maxcharges="5"
+
+    achievement="Denis - Amoeba"
+/>
+<active id="2" name="Cellphone"
+    description="Call for help"
+    gfx="denis_cellphone.png"
+    quality="0"
+    tags="offensive"
+    cache=""
+
+    maxcharges="3"
+    shopprice="10"
+
+    achievement="Denis - Cellphone"
+/>
+<passive id="3" name="Power Cell"
+    description="Blown fuse"
+    gfx="denis_powercell.png"
+    quality="1"
+    tags="nolostbr"
+    cache="damage"
+
+    achievement="Denis - Power Cell"
+/>
+<passive id="4" name="Cello"
+    description="Out of tune"
+    gfx="denis_cello.png"
+    quality="2"
+    tags="offensive"
+    cache="firedelay"
+
+    achievement="Denis - Cello"
+/>
+<passive id="5" name="Ocellus"
+    description="Ward off prey"
+    gfx="denis_ocellus.png"
+    quality="3"
+    tags="offensive"
+    cache=""
+
+    achievement="Denis - Ocellus"
+/>
+
+<!-- TRINKETS -->
+<trinket id="0" name="Animal Cell"
+    description="Blood"
+    gfx="denis_animalcell.png"
+    cache=""
+
+    achievement="Denis - Animal Cell"
+/>
+<trinket id="1" name="Plant Cell"
+    description="Plague"
+    gfx="denis_plantcell.png"
+    cache=""
+
+    achievement="Denis - Plant Cell"
+/>
+<trinket id="2" name="Fungi Cell"
+    description="Togetherness"
+    gfx="denis_fungicell.png"
+    cache=""
+
+    achievement="Denis - Fungi Cell"
+/>
+<trinket id="3" name="Protist Cell"
+    description="Mystery"
+    gfx="denis_protistcell.png"
+    cache=""
+
+    achievement="Denis - Protist Cell"
+/>
+<trinket id="4" name="Prokaryotic Cell"
+    description="Strength"
+    gfx="denis_prokaryoticcell.png"
+    cache=""
+
+    achievement="Denis - Prokaryotic Cell"
+/>
+
+</items>

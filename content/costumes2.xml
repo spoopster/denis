@@ -1,0 +1,4 @@
+<costumes anm2root="gfx/characters/">
+    <costume id="3" anm2path="denis_costume_power_cell.anm2" type="passive"/>
+    <costume id="5" anm2path="denis_costume_ocellus.anm2" type="passive"/>
+</costumes>
