@@ -330,7 +330,6 @@ local function denisUpdate(_, pl)
                 end
 
                 local newMinisaac = pl:AddMinisaac(pl.Position, false)
-                newMinisaac:GetSprite():Play("FlyDown", true)
                 newMinisaac:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
                 tryHoldMinisaac(pl, newMinisaac)
                 sfx:Play(SoundEffect.SOUND_BLOODSHOOT)
